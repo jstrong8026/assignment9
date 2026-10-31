@@ -113,7 +113,7 @@ def divide(a: Number, b: Number) -> float:
     # Check if the divisor is zero to prevent division by zero
     if b == 0:
         # Raise a ValueError with a descriptive message
-        raise ValueError("Cannot divide by zero!")
+        raise ValueError("Cannot divide by zero - you just broke the internet!")
     
     # Perform division of a by b and return the result as a float
     result = a / b

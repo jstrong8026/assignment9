@@ -150,5 +150,5 @@ def test_divide_by_zero_api(client):
     assert 'error' in response.json(), "Response JSON does not contain 'error' field"
     
     # Assert that the 'error' field contains the correct error message
-    assert "Cannot divide by zero!" in response.json()['error'], \
-        f"Expected error message 'Cannot divide by zero!', got '{response.json()['error']}'"
+    assert "Cannot divide by zero - you just broke the internet!" in response.json()['error'], \
+        f"Expected error message 'Cannot divide by zero - you just broke the internet!', got '{response.json()['error']}'"
