@@ -108,7 +108,7 @@ def divide(a: Number, b: Number) -> float:
     >>> divide(5, 0)
     Traceback (most recent call last):
         ...
-    ValueError: Cannot divide by zero!
+    ValueError: Cannot divide by zero - you just broke the internet!
     """
     # Check if the divisor is zero to prevent division by zero
     if b == 0:
