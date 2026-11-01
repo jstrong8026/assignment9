@@ -138,7 +138,7 @@ def test_divide_by_zero_api(client):
     Steps:
     1. Send a POST request to the `/divide` endpoint with JSON data `{'a': 10, 'b': 0}`.
     2. Assert that the response status code is `400 Bad Request`.
-    3. Assert that the JSON response contains an 'error' field with the message "Cannot divide by zero!".
+    3. Assert that the JSON response contains an 'error' field with the message "Cannot divide by zero - you just broke the internet!".
     """
     # Send a POST request to the '/divide' endpoint with JSON payload attempting division by zero
     response = client.post('/divide', json={'a': 10, 'b': 0})
