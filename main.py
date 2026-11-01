@@ -63,6 +63,12 @@ async def read_root(request: Request):
     """
     return templates.TemplateResponse(request, "index.html")
 
+#adding FastAPI health check response
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
 @app.post("/add", response_model=OperationResponse, responses={400: {"model": ErrorResponse}})
 async def add_route(operation: OperationRequest):
     """
